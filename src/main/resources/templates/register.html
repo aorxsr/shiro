@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+
+    <link rel="stylesheet" href="/statics/layui/css/layui.css"/>
+
+    <script type="application/javascript" src="/statics/jquery-3.4.0.min.js"></script>
+    <script type="application/javascript" src="/statics/layui/layui.all.js"></script>
+
+</head>
+<body>
+<form class="layui-form layui-form-pane" style="margin: 0 auto;width: 600px;padding-top: 300px">
+    <div class="layui-form-item">
+        <label class="layui-form-label">用户名:</label>
+        <div class="layui-input-inline">
+            <input class="layui-input" type="text" name="username" required lay-verify="required"
+                   placeholder="请输入用户名:"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">密码:</label>
+        <div class="layui-input-inline">
+            <input class="layui-input" type="password" placeholder="请输入密码:" required lay-verify="required"
+                   name="password"/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">邀请码:</label>
+        <div class="layui-input-inline">
+            <input class="layui-input" type="text" required lay-verify="reqired" name="sal" placeholder="请输入邀请码:"/>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <button class="layui-btn layui-btn-primary">清空</button>
+        <button class="layui-btn layui-btn-success">注册</button>
+    </div>
+</form>
+</body>
+</html>

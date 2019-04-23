@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Date: 2019/4/22 16:34
  */
 @Controller
+@RequestMapping(value = "/api/view/comm")
 public class IndexController {
 
 	@RequestMapping(value = "/index")
@@ -18,6 +19,11 @@ public class IndexController {
 	@RequestMapping(value = "/login")
 	public String login() {
 		return "/login";
+	}
+
+	@RequestMapping(value = "/register")
+	public String register() {
+		return "/register";
 	}
 
 	@RequestMapping(value = "/unauthorized")
